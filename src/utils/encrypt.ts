@@ -1,5 +1,5 @@
 import { compare, hash, genSaltSync } from 'bcrypt'
-import utils from 'osins-utils'
+import { optional } from 'osins-utils'
 
 export const salt = async () => {
   return genSaltSync()
@@ -10,7 +10,7 @@ export const encrypt = async (text: string, salt: string) => {
 }
 
 export const verify = async (text: string, hash: string) => {
-  if (utils.optional(text).isEmpty() || utils.optional(hash).isEmpty())
+  if (optional(text).isEmpty() || optional(hash).isEmpty())
     return false
   return await compare(text, hash)
 }

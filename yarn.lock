@@ -2056,6 +2056,11 @@ cross-spawn@^7.0.0, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
+crypto-js@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.1.1.tgz#9e485bcf03521041bd85844786b83fb7619736cf"
+  integrity sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==
+
 date-fns@^2.29.3:
   version "2.29.3"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.29.3.tgz#27402d2fc67eb442b511b70bbdf98e6411cd68a8"
@@ -4085,10 +4090,12 @@ os-tmpdir@~1.0.2:
   resolved "https://registry.yarnpkg.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
   integrity sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==
 
-osins-utils@^0.0.22:
-  version "0.0.22"
-  resolved "https://registry.yarnpkg.com/osins-utils/-/osins-utils-0.0.22.tgz#1d62ea3344e026a322238de52abe92492d2d9cdb"
-  integrity sha512-s411W/CBd/rIxcybsDjtkk2KE0iEKJJS17FGWoWRjexpqsKf9+8RLztwhMgPjsF4Rqgzrhyx8Vu35jhEgNkpaQ==
+osins-utils@^0.0.30:
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/osins-utils/-/osins-utils-0.0.30.tgz#556de760b2e530b380591ebb349a732d124f5baf"
+  integrity sha512-BzSpYWfSqE2GkAsbywXRWVd7AScDJJallG0Y+RVHs5cXUK6UJdKkIJy2KGd/TPUmIFm/dgjvscQa5P4+xLzLPA==
+  dependencies:
+    crypto-js "^4.1.1"
 
 p-limit@^2.2.0:
   version "2.3.0"
